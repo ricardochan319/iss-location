@@ -8,7 +8,7 @@ def get_iss_location():
     try:
         # Send GET request to the API
         response = requests.get(api_url)
-        response.raise_for_status()  # Raise an exception for bad responses
+        response.raise_for_status()
 
         # Parse the JSON data
         iss_data = response.json()
